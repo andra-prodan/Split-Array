@@ -1,0 +1,19 @@
+Am impărțit în 3 funcții diferite codul pentru a fi mai ușor de urmărit.
+
+Prima funcție este pentru a afla medie elementelor. Daca vectorul este gol va returna 0, altfel va
+da media elementelor vectorului.
+
+Urmatoarea functie este pentru a vedea daca avem elemente ce se repeta in vector. Daca sunt acestea vor fi
+trecute intr-un alt vector si va fi returnat.
+
+A treia functie este calculul celor doua jumatati a vectorului initial. Prima oara cautam sa aflam prima
+jumatate ce urmeaza conditia de a avea media aritmetica egala cu media vectorului initial. Am pus conditia
+asta deoarece pentru a avea 2 jumatati a unui vector ce au aceeasi medie aritmetica, acea medie este de fapt
+media aritmetica a vectorului initial.
+Dupa ce aflam prima jumatate urmarim sa aflam a doua. Facem asta prin a exclude elementele ce deja apar
+in primul vector. Aici ne folosim si de functia Dublicate, daca in vectorul initial au fost elemente
+ce se repeta, le vom adauga in al doilea vector.
+Dupa ce aflam cei 2 vectori vom pune conditia ca acestia sa fie egali, daca sunt functia va returna true.
+
+Ultima functie este chiar cea main. Aici numai preluam datele de la tastatura, lungimea vectorului initial
+si elementele acestuia, si il afisam, ca apoi sa apelam functia SplitArray.
